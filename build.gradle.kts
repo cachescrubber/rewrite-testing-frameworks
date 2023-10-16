@@ -25,7 +25,7 @@ recipeDependencies {
     parserClasspath("com.squareup.okhttp3:mockwebserver:4.10.0")
 }
 
-val rewriteVersion = rewriteRecipe.rewriteVersion.get()
+val rewriteVersion = "latest.release"
 dependencies {
     implementation(platform("org.openrewrite:rewrite-bom:$rewriteVersion"))
     implementation("org.openrewrite:rewrite-java")
